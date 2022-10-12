@@ -1,28 +1,17 @@
 "use strict"
 import express from 'express';
-import router from './router/router';
+//import router from './router/router';
 import cors from 'cors';
-import { sequelize } from './database/conect';
-import { User } from './models/user'; 
-import { CreatePermissions } from './models/createPermission';
-import { Rules } from './models/createRules';
-import { Permission_Roles } from './models/createPermissionRoles';
 import helmet from 'helmet';
-import { rateLimit } from './Password/ratelimit'
+//import { rateLimit } from './Password/ratelimit'
 const app = express();
 const port = 2000;
-
-sequelize;
-User;
-CreatePermissions;
-Rules; 
-Permission_Roles;
 
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-app.use(router);
+//app.use(router);
 app.use(helmet());
 app.use(helmet.contentSecurityPolicy());
 app.use(helmet.crossOriginEmbedderPolicy());

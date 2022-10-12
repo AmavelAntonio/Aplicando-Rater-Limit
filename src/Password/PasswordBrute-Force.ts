@@ -3,7 +3,7 @@ import { RateLimiterRedis } from 'rate-limiter-flexible';
 
 
 
-const redisClient = redis.createClient({
+/*const redisClient = redis.createClient({
     enable_offline_queue: false,
 });
   
@@ -15,4 +15,4 @@ const redisClient = redis.createClient({
     points: maxConsecutiveFailsByUsername,
     duration: 60 * 60 * 3, // Store number for three hours since first fail
     blockDuration: 60 * 15, // Block for 15 minutes
-  });
+  });*/
