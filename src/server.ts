@@ -8,7 +8,7 @@ import { CreatePermissions } from './models/createPermission';
 import { Rules } from './models/createRules';
 import { Permission_Roles } from './models/createPermissionRoles';
 import helmet from 'helmet';
-import { rateLimit } from './ratelimit'
+import { rateLimit } from './Password/ratelimit'
 const app = express();
 const port = 2000;
 

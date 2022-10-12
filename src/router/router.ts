@@ -3,7 +3,7 @@ import { Router } from "express";
 import UserController  from "../controllers/UserController";
 import sessionController from "../controllers/sessionController";
 import Permission from "../controllers/permissionController"
-import { rateLimit } from "../ratelimit";
+import { rateLimit } from "../Password/ratelimit";
 const router = Router()
 
 router.get('/create', UserController.create)
